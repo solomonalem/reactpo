@@ -7,7 +7,7 @@
   --light-heading: #c1e2e2;
   --size: 50%;
   --color-dark-gray: #bbbbbb;
-  --color-light-gray: #e7e7e7;
+  --color-light-gray: #b9d0d3;
   --color-white: #fff;
   --color-light: #4dc2ca;
   --color-dark: #39979d;
@@ -113,14 +113,14 @@ nav .navbar-items ul {
   list-style: none;
 }
 nav .navbar-items ul li a {
-  color: rgb(220, 234, 240);
+  color: rgb(58, 173, 191);
   margin-right: 1.5rem;
   padding: 0.3rem;
   font-size: 0.9rem;
   /* border-bottom: 1px solid var(--secondary-color); */
 }
 nav .navbar-items ul li a:hover {
-  color: var(--primary-color);
+  color: rgb(220, 234, 240);
 }
 /* ======== hero-section   ============== */
 .about {
@@ -162,7 +162,7 @@ nav .navbar-items ul li a:hover {
   font-size: 1.9rem;
 }
 .about-bio p {
-  color: rgb(109, 193, 204);
+  color: rgb(214, 220, 221);
   line-height: 2;
   padding: 2rem 1rem;
 }
@@ -177,7 +177,6 @@ nav .navbar-items ul li a:hover {
   border: 2px solid var(--tertiary-color);
   padding: 0.85rem;
   animation: movedown 2s;
-  
 }
 .hero-img {
   width: 10rem;
@@ -218,8 +217,6 @@ nav .navbar-items ul li a:hover {
   }
 }
 
-
-
 /*======================================== CONTACT  ==================-=-====*/
 
 .contact {
@@ -246,6 +243,7 @@ nav .navbar-items ul li a:hover {
 }
 .contact-form {
   padding: 1rem;
+  padding-top: 2rem;
   border: 1px solid rgb(40, 142, 165);
 }
 .contact div button {
@@ -253,7 +251,7 @@ nav .navbar-items ul li a:hover {
   width: 90%;
   padding: 0.5rem 1.3rem;
   color: rgb(255, 255, 255);
-  margin: 2rem 0;
+  margin: 1rem 0;
   border: none;
   outline: none;
   border-radius: 0.1rem;
@@ -650,10 +648,9 @@ h2:after {
 
 /* ======== FOOTER - SECTION ==========*/
 .footer {
-  height: 70vh;
-  background-color: var(--heading-color);
+  /* height: 40vh; */
+  background-color: rgb(0, 0, 0);
   display: block;
-  background-color: var(--primary-color);
   padding: 2rem 0;
 }
 .footer-container {
@@ -665,22 +662,26 @@ h2:after {
 }
 .footer h3 {
   color: white;
-  font-size: 1.2rem;
-  margin: 1rem 0;
+  font-size: 1rem;
+  margin: 0;
 }
 .footer ul {
   width: auto;
-  padding: 2rem;
+  padding: 1.5rem;
 }
 
 .footer ul li {
   list-style: none;
   opacity: 0.7;
-  margin-bottom: 1rem;
+  margin-bottom: .6rem;
+
+  font-size: 0.8rem;
 }
 .footer ul li a {
   text-decoration: none;
-  color: var(--secondary-color);
+  color: var(--color-light-gray);
+  
+  font-size: 0.8rem;
 }
 .footer li:hover {
   opacity: 1;
@@ -690,19 +691,19 @@ h2:after {
   margin-right: 0.5rem;
   cursor: pointer;
   border-radius: 50%;
-  border: 1px solid var(--secondary-color);
+  border: 1px solid var(--color-light-gray);
   padding: 0.44rem;
-  color: var(--secondary-color);
+  color: var(--color-light-gray);
 }
 .footer div ul li a i:hover {
   background-color: #2e4053;
-  color: var(--secondary-color);
+  color: var(--color-light-gray);
 }
 .copyright {
-  color: var(--secondary-color);
+  color: var(--color-light-gray);
   opacity: 0.4;
   text-align: center;
-  padding: 2rem;
+  padding: 1rem;
   border-top: 1px solid white;
 }
 
