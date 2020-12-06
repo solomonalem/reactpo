@@ -1,6 +1,7 @@
 import React from 'react';
 
 function About (){
+    
     return(
         <section className="about">
                 <div className="hero">
@@ -13,7 +14,7 @@ function About (){
                     </div>
                   
                </div>
-               <div className="about-bio">
+                        <div className="about-bio">
                         <h2>About Me</h2>
                         <p>
                         Lorem ipsum dolor tiae iusto autem quos ex saepe magni harum quis modi
@@ -24,7 +25,12 @@ function About (){
                         accusantium neque fu sit amet consectetur adipisicing elit. Ea eum
                       
                         </p>
-             </div>
+                      </div>
+                     
+                    
+
+
+              
            
       </section>
     )

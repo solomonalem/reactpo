@@ -2,7 +2,7 @@ import React from 'react';
 
 function Nav(props){
 
-  const {aboutSelected,setAboutSelected} = props;
+  const {aboutSelected,setAboutSelected,contactSelected,setContactSelected} = props;
 
     return(
         <header>
@@ -16,7 +16,7 @@ function Nav(props){
              
               <li>
                 
-                <a href="#about" onClick={()=>setAboutSelected(true)}>About Me</a>
+                <a href="#about" onClick={()=>{setContactSelected(false); setAboutSelected(true);}}>About Me</a>
               </li>
               {/* <li>
                 <a href="#skills">Skills</a>
@@ -25,7 +25,7 @@ function Nav(props){
                 <a href="#work">Portfolio</a>
               </li>
               <li>
-                <a href="#contact">Contact</a>
+                <a href="#contact" onClick={()=> {setContactSelected(true); setAboutSelected(false);}}>Contact</a>
               </li>
               <li>
                 <a href="#your-trainers">Resume</a>

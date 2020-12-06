@@ -1,6 +1,6 @@
 :root {
-  --primary-color: #f1f1f1;
-  --secondary-color: #b9d0d3;
+  --primary-color: rgb(4, 14, 46);
+  --secondary-color: #306191;
   --tertiary-color: #39a6b2;
   --text-color: #56a5af;
   --heading-color: #3a3f42;
@@ -63,7 +63,7 @@ header {
   position: relative;
 }
 nav {
-  background-color: rgb(4, 14, 46);
+  background-color: var(--primary-color);
   padding: 0.5rem 1rem;
   display: flex;
   justify-content: space-between;
@@ -102,8 +102,7 @@ nav h1 span {
 nav a {
   text-decoration: none;
   color: var(--secondary-color);
-  color:rgb(35, 147, 175);
-
+  color: rgb(35, 147, 175);
 }
 
 nav .navbar-items ul {
@@ -114,10 +113,10 @@ nav .navbar-items ul {
   list-style: none;
 }
 nav .navbar-items ul li a {
-  color:rgb(220, 234, 240);
+  color: rgb(220, 234, 240);
   margin-right: 1.5rem;
   padding: 0.3rem;
-  font-size: .9rem;
+  font-size: 0.9rem;
   /* border-bottom: 1px solid var(--secondary-color); */
 }
 nav .navbar-items ul li a:hover {
@@ -137,7 +136,7 @@ nav .navbar-items ul li a:hover {
   background-position: 80%;
   min-height: 100vh;
   position: relative;
-  /* background-color: rgb(4, 14, 46); */
+  /* background-color: var(--primary-color); */
 }
 .hero {
   background-color: #fff;
@@ -178,6 +177,7 @@ nav .navbar-items ul li a:hover {
   border: 2px solid var(--tertiary-color);
   padding: 0.85rem;
   animation: movedown 2s;
+  
 }
 .hero-img {
   width: 10rem;
@@ -194,6 +194,9 @@ nav .navbar-items ul li a:hover {
   top: 66%;
   left: 23%;
   color: var(--primary-color);
+}
+.hero-subtitle p {
+  color: #f1f1f1;
 }
 .hero-subtitle h3 {
   color: var(--text-color);
@@ -213,6 +216,87 @@ nav .navbar-items ul li a:hover {
   100% {
     top: 30%;
   }
+}
+
+
+
+/*======================================== CONTACT  ==================-=-====*/
+
+.contact {
+  width: 30%;
+  text-align: center;
+  margin: auto;
+  margin-top: -5rem;
+  margin-right: 5rem;
+  padding: 2rem 3rem;
+  background-color: #fff;
+  height: 110vh;
+  background-color: #040e2e;
+  /* border: 2px solid rgb(48, 124, 143); */
+  /* transform: skewX(-3deg); */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+.contact h2 {
+  color: rgb(240, 240, 240);
+  margin-top: 5rem;
+  font-size: 1.9rem;
+  /* margin-bottom: 3rem; */
+}
+.contact-form {
+  padding: 1rem;
+  border: 1px solid rgb(40, 142, 165);
+}
+.contact div button {
+  background-color: rgba(40, 142, 165, 0.871);
+  width: 90%;
+  padding: 0.5rem 1.3rem;
+  color: rgb(255, 255, 255);
+  margin: 2rem 0;
+  border: none;
+  outline: none;
+  border-radius: 0.1rem;
+  cursor: pointer;
+}
+.contact div button:hover {
+  background-color: rgb(35, 124, 144);
+}
+.contact div input {
+  width: 90%;
+  padding: 0.4rem 0.6rem;
+  margin: 0.4rem 0;
+  background-color: rgba(48, 54, 120, 0.388);
+  /* background-color: var(--secondary-color); */
+  border: none;
+  outline: none;
+  border-radius: 0.1rem;
+  color: white;
+}
+.contact div textarea {
+  width: 90%;
+  padding: 0.4rem 0.3rem;
+  margin: 0.4rem 0;
+  background-color: rgba(48, 54, 120, 0.388);
+
+  border: none;
+  outline: none;
+}
+.contact ul {
+  display: flex;
+  justify-content: center;
+}
+.contact ul li a i {
+  margin-right: 0.5rem;
+  cursor: pointer;
+  border-radius: 50%;
+  border: 1.4px solid var(--secondary-color);
+  padding: 0.44rem;
+  color: var(--secondary-color);
+}
+.contact div ul li a i:hover {
+  background-color: #2e4053;
+  color: var(--secondary-color);
 }
 
 /*========================================features ==================-=-====*/
@@ -569,7 +653,7 @@ h2:after {
   height: 70vh;
   background-color: var(--heading-color);
   display: block;
-  background-color: rgb(4, 14, 46);
+  background-color: var(--primary-color);
   padding: 2rem 0;
 }
 .footer-container {
@@ -728,13 +812,6 @@ h2:after {
     padding: 0.3rem 0.5rem;
     width: 7.3rem;
     font-size: 0.69rem;
-  }
-
-  .contact h3 {
-    flex: 1 20%;
-  }
-  .contact div {
-    flex: 2 80%;
   }
 }
 /*=== media-query screen size 768px ---*/
