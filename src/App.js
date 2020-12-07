@@ -12,12 +12,18 @@ function App() {
   const [aboutSelected, setAboutSelected] = useState(true);
   const [portfolioSelected, setPortfolioSelected] = useState(false);
   const [contactSelected, setContactSelected] = useState(false);
+  const [skillSelected, setSkillSelected] = useState(false);
   return (
     <div>
       <Nav
+      contactSelected={contactSelected}
+      portfolioSelected={portfolioSelected}
+      aboutSelected={aboutSelected}
         setAboutSelected={setAboutSelected}
         setContactSelected={setContactSelected}
         setPortfolioSelected={setPortfolioSelected}
+        setSkillSelected={setSkillSelected}
+
       />
       <main>
         <div>

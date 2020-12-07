@@ -14,15 +14,17 @@ function Footer(){
       
       <ul>
         <li>
-          <a href="https://github.com/solomonmeresa" target="_blank">
+          <a href="https://github.com/solomonmeresa" 
+          target="_blank" rel="noreferrer"> 
+          
             <i className="fab fa-github"></i> GitHub</a
           >
         </li>
         <li>
           <a
             href="https://www.linkedin.com/in/solomom-meresa-4b83251a3/"
-            target="_blank"
-            ><i className="fab fa-linkedin-in"></i>LinkedIn</a
+            target="_blank" rel="noreferrer"
+            > <i className="fab fa-linkedin-in"></i>LinkedIn</a
           >
         </li>
       

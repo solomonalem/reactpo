@@ -1,8 +1,10 @@
 import React from 'react';
+import Skill from '../Skill';
 
 function About (){
     
     return(
+        <>
         <section className="about">
                 <div className="hero">
                     <div className="hero-body">
@@ -26,13 +28,10 @@ function About (){
                       
                         </p>
                       </div>
-                     
-                    
-
-
-              
-           
+             
       </section>
+      <Skill/>
+      </>
     )
 }
 export default About;

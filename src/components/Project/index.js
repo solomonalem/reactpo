@@ -42,8 +42,8 @@ function Project(){
                           <h6><span>HTML</span> <span>CSS</span><span>BOOTSTRAP</span>  <span> JAVASCRIPT</span></h6>
                         </div>
                         <div>
-                            <a href={`${project.githubLink}`} target="_blank">  GitHub</a>
-                            <a href={`${project.liveLink}`} target="_blank"> Live</a>                
+                            <a href={`${project.githubLink}`} target="_blank" rel="noreferrer">  GitHub</a>
+                            <a href={`${project.liveLink}`} target="_blank" rel="noreferrer"> Live</a>                
                         </div>
                     </div>
                     

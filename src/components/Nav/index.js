@@ -2,7 +2,7 @@ import React from 'react';
 
 function Nav(props){
 
-  const {setAboutSelected,setContactSelected,setPortfolioSelected} = props;
+  const {aboutSelected,contactSelected,portfolioSelected,setAboutSelected,setContactSelected,setPortfolioSelected,setSkillSelected} = props;
 
     return(
         <header>
@@ -15,40 +15,43 @@ function Nav(props){
             <ul>
              
               <li>
-                <a href="#about" 
+                <a href="#about"  className={`${ aboutSelected && `navActive`}`}
                   onClick={() => {
                     setContactSelected(false);
                     setAboutSelected(true);
                     setPortfolioSelected(false);
+                    setSkillSelected(false);
                   }}
                 >About Me</a>
               </li>
-              {/* <li>
-                <a href="#skills">Skills</a>
-              </li> */}
+              
 
               <li>
-                <a href="#work" 
+                <a href="#work" className={`${ portfolioSelected && `navActive`}`}
                    onClick={() => {
                       setContactSelected(false);
                       setAboutSelected(false);
                       setPortfolioSelected(true);
+                    setSkillSelected(false);
+
                     }}
                   > Portfolio</a>
               </li>
               
               <li>
-                <a href="#contact"
+                <a href="#contact" className={`${ contactSelected && `navActive`}`}
                   onClick={() => {
                     setContactSelected(true);
                     setAboutSelected(false);
                     setPortfolioSelected(false);
+                    setSkillSelected(false);
+
                   }}
                 >Contact</a>
               </li>
 
               <li>
-                <a href="#your-trainers">Resume</a>
+                <a href="../../../public/files/Resume.pdf" download>Resume</a>
               </li>
             </ul>
           </div>

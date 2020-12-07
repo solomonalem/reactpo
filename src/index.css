@@ -1016,3 +1016,7 @@ h2:after {
     margin: 0.3rem;
   }
 }
+
+.navActive{
+  color:rgb(201, 216, 228) !important;
+}
