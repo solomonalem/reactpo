@@ -427,7 +427,6 @@ h2:after {
   margin-top: 6px;
 }
 .skills h4 {
-  /* color: var(--color-light); */
   color: rgb(255, 255, 255);
   font-weight: lighter;
   text-align: center;
@@ -436,27 +435,12 @@ h2:after {
   padding: 0.2rem 0.3rem;
   font-size: 0.8rem;
   font-family: "lato", sans-serif;
-  /* border: 1px solid blue; */
   border-radius: 1rem;
   background-color: rgb(57, 151, 158);
-  /* background-image: linear-gradient(
-    180deg,
-    #0e6882 0%,
-    #00afb1 100%,
-    #0e6882 0%
-  ); */
+
   margin-bottom: 0.9rem;
   letter-spacing: 0.03rem;
 }
-/* .skills h4:after {
-  content: " ";
-  width: 60px;
-  height: 1px;
-  background-color: white;
-  margin: 0 auto;
-  display: block;
-  margin-top: 6px;
-} */
 .skills li {
   font-size: 0.8rem;
   text-align: left;
@@ -470,39 +454,13 @@ h2:after {
   padding: 0;
 }
 
-/**=================  ABOUT  =======================================*/
-/* 
-.about {
-  height: 100vh;
-  display: flex;
-  margin-top: 3rem;
-  margin: 0rem 0rem;
-  padding: 2rem 6rem;
-}
-
-.about-bio {
-  text-align: center;
-  display: block;
-  padding: 2rem 3rem;
-}
-.about-bio h2 {
-  color: rgb(240, 240, 240);
-  margin: 2rem 0rem;
-  font-size: 1.9rem;
-}
-.about-bio p {
-  color: white;
-  line-height: 2;
-  padding: 2rem 1rem;
-} */
 /* =============================== PROJECTS =============== */
 
 .projects {
   width: 100%;
   padding: 3rem 3rem;
 
-  background-color: #ffffff;
-  /* background-color: #f1f3fa; */
+  background-color: #eff4f7;
 }
 
 .project {
@@ -511,12 +469,11 @@ h2:after {
   height: 49vh;
   width: 100%;
   background-image: linear-gradient(110deg, #00afb1 0%, #0e6882 100%);
-  background-color: #fff;
+
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
   box-shadow: 0 0 15px 0px rgba(0, 0, 0, 0.377);
   border-radius: 0.3rem;
-  /* padding: 1rem; */
-  margin: 1.4rem 0;
+  margin: 4.4rem 0;
 }
 .projects h2 {
   text-align: center !important;
@@ -531,31 +488,35 @@ h2:after {
 .projects .project-img:hover {
   transform: scale(1.01);
 }
-.project-one .project-img {
-  background: url("./assets/images/work-6.png");
+.project-img img {
+  width: 100%;
+  height: 100%;
+}
+.project-ConnectIn .project-img {
+  background: url("./assets/images/ConnectIn.png");
 
   background-size: cover;
 }
-.project-two .project-img {
-  background: url("./assets/images/work-1.png");
+.project-Edaga .project-img {
+  background: url("./assets/images/Edaga.png");
   background-size: cover;
 }
-.project-three .project-img {
-  background: url("./assets/images/work-5.png");
+.project-Covid-Tracker .project-img {
+  background: url("./assets/images/Covid-Tracker.png");
   background-size: cover;
 }
-.project-four .project-img {
-  background: url("./assets/images/work-7.png");
+.project-Tech-Blog .project-img {
+  background: url("./assets/images/Tech-Blog.png");
   background-size: cover;
 }
 .project-info {
   border-radius: 0.3rem;
   background-image: linear-gradient(110deg, #00afb1 0%, #0e6882 100%);
+  /* background-color: var(--primary-color); */
   padding: 1rem;
   width: 50%;
   align-items: center;
   text-align: center;
-  background-color: rgb(232, 242, 250);
 }
 
 .project-info h4 {
@@ -618,7 +579,7 @@ h2:after {
 
 /*=============  WORK =============*/
 
-.item-title {
+/* .item-title {
   bottom: 10%;
   left: 0;
   border: 2px solid black;
@@ -644,7 +605,7 @@ h2:after {
 .work-grid-item:hover {
   transform: scale(1.03);
   opacity: 0.9;
-}
+} */
 
 /* ======== FOOTER - SECTION ==========*/
 .footer {
@@ -673,14 +634,14 @@ h2:after {
 .footer ul li {
   list-style: none;
   opacity: 0.7;
-  margin-bottom: .6rem;
+  margin-bottom: 0.6rem;
 
   font-size: 0.8rem;
 }
 .footer ul li a {
   text-decoration: none;
   color: var(--color-light-gray);
-  
+
   font-size: 0.8rem;
 }
 .footer li:hover {

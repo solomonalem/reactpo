@@ -4,6 +4,7 @@ import Nav from './components/Nav'
 import About from './components/About'
 import Contact from './components/Contact'
 import Footer from './components/Footer'
+import Portfolio from './components/Portfolio'
 
 function App() {
   
@@ -14,16 +15,15 @@ function App() {
   return (
     <div>
       <Nav
-        aboutSelected={aboutSelected}
         setAboutSelected={setAboutSelected}
-        contactSelected={contactSelected}
         setContactSelected={setContactSelected}
+        setPortfolioSelected={setPortfolioSelected}
       />
       <main>
         <div>
             {contactSelected && (<Contact />) } 
-            {aboutSelected && (<About aboutSelected={aboutSelected} contactSelected={contactSelected} />)}
-            {/* {portfolioSelected && (<Portfolio />)} */}
+            {aboutSelected && (<About />)}
+            {portfolioSelected && (<Portfolio />)}
 
         </div>
      
