@@ -46,7 +46,7 @@ npm run start
 
 ### LARGE SCREEN SIZE
 
-<img src="./src/assets/images/Screenshot/screenshot-1.png" alt="large-screen app" width="700px"/>
+<img src="./src/assets/images/Screenshot/screenshot-1.png" alt="large-screen app" />
 <img src="./src/assets/images/Screenshot/screenshot-2.png" alt="large-screen app" width="700px"/>
 <img src="./src/assets/images/Screenshot/screenshot-3.png" alt="large-screen app" width="700px"/>
 
