@@ -8,7 +8,7 @@ function Nav(props){
         <header>
         <nav>
           <h1>
-            <a href="./"><span>S</span> -Webdev</a>
+            <a href="./"> <span className="logo">Web</span> evelopment</a>
           </h1>
           <div className="navbar-items">
            
@@ -52,7 +52,7 @@ function Nav(props){
               </li>
 
               <li>
-              <a href="#contact" className={`${ resumeSelected && `navActive`}`}
+              <a href="#resume" id="resume" className={`${ resumeSelected && `navActive`}`}
                   onClick={() => {
                     setContactSelected(false);
                     setAboutSelected(false);
@@ -60,7 +60,7 @@ function Nav(props){
                     setResumeSelected(true)
                    
 
-                  }} download>Resume</a>
+                  }} download>Resume <i class="fas fa-download"></i></a>
               </li>
             </ul>
           </div>
