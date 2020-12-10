@@ -1015,13 +1015,13 @@ h2:after {
   }
 
   .projects {
-    /* padding: 3rem 1rem; */
+    padding: 0rem;
   }
   .project {
     display: block;
     height: 87vh;
     width: 94%;
-    margin: 1rem .8rem;
+    margin: 1rem 0.8rem;
   }
   .projects .project-img {
     height: 38%;
@@ -1071,9 +1071,7 @@ h2:after {
     min-width: 58%;
   }
 
-  .projects {
-    padding: 3rem 1rem;
-  }
+  
   .project {
     display: block;
     height: 81vh;
@@ -1134,9 +1132,9 @@ h2:after {
     min-width: 88%;
   }
 
-  .projects {
+  /* .projects {
     padding: 3rem 0rem;
-  }
+  } */
   .project {
     display: block;
     height: 81vh;
