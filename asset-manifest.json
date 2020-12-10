@@ -1,0 +1,24 @@
+{
+  "files": {
+    "main.css": "/solo-portfolio/static/css/main.992400b1.chunk.css",
+    "main.js": "/solo-portfolio/static/js/main.f163d458.chunk.js",
+    "main.js.map": "/solo-portfolio/static/js/main.f163d458.chunk.js.map",
+    "runtime-main.js": "/solo-portfolio/static/js/runtime-main.58889068.js",
+    "runtime-main.js.map": "/solo-portfolio/static/js/runtime-main.58889068.js.map",
+    "static/js/2.0b6528f2.chunk.js": "/solo-portfolio/static/js/2.0b6528f2.chunk.js",
+    "static/js/2.0b6528f2.chunk.js.map": "/solo-portfolio/static/js/2.0b6528f2.chunk.js.map",
+    "static/js/3.f266fb9b.chunk.js": "/solo-portfolio/static/js/3.f266fb9b.chunk.js",
+    "static/js/3.f266fb9b.chunk.js.map": "/solo-portfolio/static/js/3.f266fb9b.chunk.js.map",
+    "index.html": "/solo-portfolio/index.html",
+    "static/css/main.992400b1.chunk.css.map": "/solo-portfolio/static/css/main.992400b1.chunk.css.map",
+    "static/js/2.0b6528f2.chunk.js.LICENSE.txt": "/solo-portfolio/static/js/2.0b6528f2.chunk.js.LICENSE.txt",
+    "static/media/index.css": "/solo-portfolio/static/media/solomon.ef2927c0.jpg",
+    "static/media/Resume.a2545596.pdf": "/solo-portfolio/static/media/Resume.a2545596.pdf"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.58889068.js",
+    "static/js/2.0b6528f2.chunk.js",
+    "static/css/main.992400b1.chunk.css",
+    "static/js/main.f163d458.chunk.js"
+  ]
+}
