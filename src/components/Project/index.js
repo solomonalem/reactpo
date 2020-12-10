@@ -48,7 +48,6 @@ function Project(){
                     </div>
                     
                 </div>
-                <hr></hr>
                 </>
             
                 

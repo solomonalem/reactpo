@@ -6,7 +6,7 @@ function About (){
     return(
         <>
         <section className="about">
-                <div className="hero">
+            <div className="hero">
                     <div className="hero-body">
                         <div className="hero-img"></div>
                     </div>
@@ -16,9 +16,9 @@ function About (){
                     </div>
                   
                </div>
-                        <div className="about-bio">
-                        <h2>About Me</h2>
-                        <p>
+            <div className="about-bio">
+                   <h2>About Me</h2>
+                   <p>
                         Lorem ipsum dolor tiae iusto autem quos ex saepe magni harum quis modi
                         accusantium neque fu sit amet consectetur adipisicing elit. Ea eum
                         tempore qui molestiae iusto autem quos ex saepe magni harum quis modi
@@ -26,10 +26,10 @@ function About (){
                         ipsum dolor tiae iusto autem quos ex saepe magni harum quis modi
                         accusantium neque fu sit amet consectetur adipisicing elit. Ea eum
                       
-                        </p>
-                      </div>
+                    </p>
+                </div>
              
-      </section>
+        </section>
       <Skill/>
       </>
     )
