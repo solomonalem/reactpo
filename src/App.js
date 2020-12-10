@@ -5,6 +5,7 @@ import About from './components/About'
 import Contact from './components/Contact'
 import Footer from './components/Footer'
 import Portfolio from './components/Portfolio'
+import Resume from './components/Resume'
 
 function App() {
   
@@ -13,9 +14,12 @@ function App() {
   const [portfolioSelected, setPortfolioSelected] = useState(false);
   const [contactSelected, setContactSelected] = useState(false);
   const [skillSelected, setSkillSelected] = useState(false);
+  const [resumeSelected, setResumeSelected] = useState(false);
   return (
     <div>
       <Nav
+      resumeSelected={resumeSelected}
+      setResumeSelected={setResumeSelected}
       contactSelected={contactSelected}
       portfolioSelected={portfolioSelected}
       aboutSelected={aboutSelected}
@@ -30,6 +34,7 @@ function App() {
             {contactSelected && (<Contact />) } 
             {aboutSelected && (<About />)}
             {portfolioSelected && (<Portfolio />)}
+            {resumeSelected && (<Resume />)}
 
         </div>
      

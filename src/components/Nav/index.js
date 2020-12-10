@@ -2,7 +2,7 @@ import React from 'react';
 
 function Nav(props){
 
-  const {aboutSelected,contactSelected,portfolioSelected,setAboutSelected,setContactSelected,setPortfolioSelected,setSkillSelected} = props;
+  const {aboutSelected,contactSelected,portfolioSelected,setAboutSelected,setContactSelected,setPortfolioSelected,setResumeSelected,resumeSelected} = props;
 
     return(
         <header>
@@ -20,7 +20,7 @@ function Nav(props){
                     setContactSelected(false);
                     setAboutSelected(true);
                     setPortfolioSelected(false);
-                    setSkillSelected(false);
+                    setResumeSelected(false)
                   }}
                 >About Me</a>
               </li>
@@ -32,7 +32,7 @@ function Nav(props){
                       setContactSelected(false);
                       setAboutSelected(false);
                       setPortfolioSelected(true);
-                    setSkillSelected(false);
+                      setResumeSelected(false)
 
                     }}
                   > Portfolio</a>
@@ -44,14 +44,23 @@ function Nav(props){
                     setContactSelected(true);
                     setAboutSelected(false);
                     setPortfolioSelected(false);
-                    setSkillSelected(false);
+                    setResumeSelected(false)
+                   
 
                   }}
                 >Contact</a>
               </li>
 
               <li>
-                <a href="../../../public/files/Resume.pdf" download>Resume</a>
+              <a href="#contact" className={`${ resumeSelected && `navActive`}`}
+                  onClick={() => {
+                    setContactSelected(false);
+                    setAboutSelected(false);
+                    setPortfolioSelected(false);
+                    setResumeSelected(true)
+                   
+
+                  }} download>Resume</a>
               </li>
             </ul>
           </div>

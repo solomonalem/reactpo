@@ -576,36 +576,15 @@ h2:after {
   font-size: 0.66rem;
   font-weight: bold;
 }
-
-/*=============  WORK =============*/
-
-/* .item-title {
-  bottom: 10%;
-  left: 0;
-  border: 2px solid black;
-  background-color: rgb(33, 34, 34);
-  height: 3rem;
-  width: 9rem;
-  position: absolute;
-  padding: 0.4rem;
-  border-radius: 0.3rem;
+.resume {
+  align-items: center;
+  width: 100%;
+  height: 100%;
 }
-
-.item-title h6 {
-  padding: 0.3rem;
-  font-size: 0.8rem;
-  color: var(--light-heading);
-  font-weight: lighter;
+.resume iframe {
+  height: 100vh;
+  width: 100vw;
 }
-.item-title h4 {
-  font-size: 0.8rem;
-  color: var(--primary-color);
-  font-weight: lighter;
-}
-.work-grid-item:hover {
-  transform: scale(1.03);
-  opacity: 0.9;
-} */
 
 /* ======== FOOTER - SECTION ==========*/
 .footer {
@@ -1017,6 +996,6 @@ h2:after {
   }
 }
 
-.navActive{
-  color:rgb(201, 216, 228) !important;
+.navActive {
+  color: rgb(201, 216, 228) !important;
 }
