@@ -668,6 +668,9 @@ h2:after {
   .about-bio {
     width: 36%;
   }
+  .contact {
+    width: 36%;
+  }
   .project-info {
     width: 45%;
   }
@@ -682,6 +685,9 @@ h2:after {
 }
 @media screen and (max-width: 1080px) {
   .about-bio {
+    width: 40%;
+  }
+  .contact {
     width: 40%;
   }
   .skills {
@@ -727,6 +733,12 @@ h2:after {
 }
 @media screen and (max-width: 970px) {
   .about-bio {
+    width: 46%;
+    margin-top: -13rem;
+    margin-right: 0rem;
+    padding: 2rem 1rem;
+  }
+  .contact {
     width: 46%;
     margin-top: -13rem;
     margin-right: 0rem;
@@ -794,7 +806,10 @@ h2:after {
   }
   .about-bio {
     text-align: center;
-    /* margin: auto; */
+    margin-top: -7.5rem;
+  }
+  .contact {
+    text-align: center;
     margin-top: -7.5rem;
   }
   .about {
@@ -831,6 +846,9 @@ h2:after {
     font-size: 0.9rem;
   }
   .about-bio {
+    width: 52%;
+  }
+  .contact {
     width: 52%;
   }
   .about {
@@ -883,6 +901,17 @@ h2:after {
     height: 90vh;
     bottom: 0 !important;
     padding: 2rem;
+  }
+  .contact {
+    width: 100vw;
+    height: 90vh;
+    bottom: 0 !important;
+    padding: 2rem;
+  }
+  .contact-form {
+    padding: 2rem;
+    padding-top: 2rem;
+    margin: 1rem 6rem;
   }
 
   .hero {
@@ -965,6 +994,10 @@ h2:after {
   .about {
     padding: 2rem 0rem;
   }
+
+  .contact-form {
+    margin: 1rem 3rem;
+  }
   section {
     padding: 3rem 3rem;
   }
@@ -1005,6 +1038,12 @@ h2:after {
   }
   .about-bio {
     padding: 2rem;
+  }
+  .contact {
+    padding: 2rem;
+  }
+  .contact-form {
+    margin: 1rem 1rem;
   }
 
   .hero-body {
@@ -1058,6 +1097,13 @@ h2:after {
   }
   .about-bio {
     height: 110vh;
+  }
+  .contact {
+    height: 100vh;
+  }
+
+  .contact-form {
+    margin: 1rem 0rem;
   }
   header nav .navbar-items {
     padding: 0.6rem;
@@ -1124,7 +1170,14 @@ h2:after {
     top: 34%;
     left: 20%;
   }
-
+.contact{
+  height:110vh;
+  padding:0.9rem;
+}
+  .contact-form {
+    padding: 0.4rem;
+    padding-top: 2rem;
+  }
   .skills {
     height: 200vh;
     padding: 1rem 1rem;
