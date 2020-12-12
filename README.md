@@ -4,7 +4,7 @@
 
 # Description
 
-Solo-portfolio is a personal website listing some of my works and  introduction of my professional skills.
+Solo-portfolio is a personal website listing some of my works and an introduction to my professional skills.
 
 ## Table of Contents
 
