@@ -4,7 +4,7 @@
 
 # Description
 
-Solo=portfolio is a personal website listing basic introduction of my selm and my woorks.
+Solo-portfolio is a personal website listing some of my works and  introduction of my professional skills.
 
 ## Table of Contents
 
@@ -46,7 +46,8 @@ npm run start
 
 ### LARGE SCREEN SIZE
 
-<img src="./src/assets/images/Screenshot/screenshot-1.png" alt="large-screen app" />
+<img src="./src/assets/images/Screenshot/screenshot-1.png" alt="large-screen app" 
+width="700px"/>
 <img src="./src/assets/images/Screenshot/screenshot-2.png" alt="large-screen app" width="700px"/>
 <img src="./src/assets/images/Screenshot/screenshot-3.png" alt="large-screen app" width="700px"/>
 
