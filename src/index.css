@@ -520,6 +520,10 @@ h2:after {
   background: url("./assets/images/Tech-Blog.png");
   background-size: cover;
 }
+.project-AdoptMe .project-img {
+  background: url("./assets/images/AdoptMe.png");
+  background-size: cover;
+}
 .project-info {
   border-radius: 0.3rem;
   background-image: linear-gradient(110deg, #00afb1 0%, #0e6882 100%);
