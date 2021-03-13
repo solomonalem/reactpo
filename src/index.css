@@ -464,7 +464,7 @@ h2:after {
 /* =============================== PROJECTS =============== */
 
 .projects {
-  width: 100%;
+  width: 100vw;
   padding: 3rem 3rem;
 
   background-color: var(--color-normal-bg);
@@ -476,7 +476,7 @@ h2:after {
   height: 49vh;
   width: 100%;
   border-radius: 0.3rem;
-  margin: 11.4rem 0;
+  margin: 10.4rem 0;
 }
 .projects h2 {
   text-align: center !important;
@@ -489,7 +489,7 @@ h2:after {
   border-radius: 0.3rem;
   margin-right: 3rem;
 
-  box-shadow: 11px 19px 50px 0px rgba(178, 188, 202, 0.897);
+  box-shadow: 11px 19px 59px 0px rgba(151, 162, 177, 0.897);
 }
 .project-img:hover {
   transform: scale(1.01);
