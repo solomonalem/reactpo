@@ -1,6 +1,12 @@
-import React,{useState} from 'react';
+import React,{useState , useEffect } from 'react';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
 function Project(){
+
+  useEffect(()=>{
+    AOS.init({duration:1500})
+  },[])
 
     const [projects] = useState([
         {
@@ -34,14 +40,14 @@ function Project(){
             {projects.map((project) => (
                 <>
                 <div className={`project project-${project.name}`} key={project.name}>
-                    <div className="project-img"> </div>
-                    <div className="project-info">
-                        <h4>{project.name}</h4>
+                    <div className="project-img" data-aos="fade-right"  data-aos-once="true"> </div>
+                    <div className="project-info" data-aos="slide-left">
+                        <h4 data-aos="slide-up">{project.name}</h4>
                         <p>{project.description}</p>
                         <div>
                           <h6><span>HTML</span> <span>CSS</span><span>BOOTSTRAP</span>  <span> JAVASCRIPT</span></h6>
                         </div>
-                        <div>
+                        <div data-aos="fade-down">
                             <a href={`${project.githubLink}`} target="_blank" rel="noreferrer">  GitHub</a>
                             <a href={`${project.liveLink}`} target="_blank" rel="noreferrer"> Live</a>                
                         </div>
