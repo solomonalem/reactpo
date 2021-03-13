@@ -1,6 +1,12 @@
 import React from 'react';
 
 function Footer(){
+
+  // get current year
+  const getDate = function(){
+    return  new Date().getFullYear()
+  }
+
     return(
         <footer className="footer">
       
@@ -53,7 +59,7 @@ function Footer(){
    
      
 
-      <div className="copyright">copyright &#169; 2020</div>
+      <div className="copyright">copyright &#169; {getDate()}</div>
     </footer>
     )
 }
