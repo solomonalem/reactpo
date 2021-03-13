@@ -46,9 +46,7 @@ function Project(){
                     <div className="project-info">
                         <h4>{project.name}</h4>
                         <p>{project.description}</p>
-                        <div>
-                          <h6><span>HTML</span> <span>CSS</span><span>BOOTSTRAP</span>  <span> JAVASCRIPT</span></h6>
-                        </div>
+                        
                         <div>
                             <a href={`${project.githubLink}`} target="_blank" rel="noreferrer">  GitHub</a>
                             <a href={`${project.liveLink}`} target="_blank" rel="noreferrer"> Live</a>                

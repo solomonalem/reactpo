@@ -1,7 +1,9 @@
 :root {
   --primary-color: rgb(4, 14, 46);
-  --secondary-color: #306191;
   --tertiary-color: #39a6b2;
+  --secondary-color: #306191;
+  --color-pro-head: #0b214a;
+  --color-normal-bg: #eff4f7;
   --text-color: #56a5af;
   --heading-color: #3a3f42;
   --light-heading: #c1e2e2;
@@ -380,13 +382,8 @@ nav .navbar-items ul li a:hover {
 /*=================   SKILLS  =================================*/
 
 .skills {
-  height: 90vh;
-  /* width: 100vw; */
-
-  background-image: linear-gradient(rgba(0, 0, 0, 0.438), rgba(0, 0, 0, 0.438)),
-    url("./assets/images/k-3.jpg");
-
-  background-size: cover;
+  height: 100vh;
+  background-color: var(--color-normal-bg);
   padding: 1rem 8rem;
   transition: all 0.3s;
   position: relative;
@@ -403,20 +400,19 @@ nav .navbar-items ul li a:hover {
 .tech-item {
   min-width: 20%;
   height: 10rem;
-  border: 1px solid rgb(247, 247, 247);
   padding: 20px;
-  color: rgb(255, 255, 255);
+  color: var(--color-pro-head);
   border-radius: 0.2rem;
-
-  /* margin: 0 8rem; */
+  /* border: 2px solid black; */
+  box-shadow: 10px 9px 24px 0px rgba(178, 188, 202, 0.897);
+  background-color: #fff;
 }
 
 .skills h2 {
-  color: var(--color-light);
+  color: var(--color-pro-head);
   text-align: center;
   margin: 4rem 0rem;
   font-size: 1.9rem;
-  font-family: "Varela Round";
   font-family: "lato";
 }
 h2:after {
@@ -471,7 +467,7 @@ h2:after {
   width: 100%;
   padding: 3rem 3rem;
 
-  background-color: #eff4f7;
+  background-color: var(--color-normal-bg);
 }
 
 .project {
@@ -479,24 +475,23 @@ h2:after {
   justify-content: space-between;
   height: 49vh;
   width: 100%;
-  background-image: linear-gradient(110deg, #00afb1 0%, #0e6882 100%);
-
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
-  box-shadow: 0 0 15px 0px rgba(0, 0, 0, 0.377);
   border-radius: 0.3rem;
-  margin: 4.4rem 0;
+  margin: 11.4rem 0;
 }
 .projects h2 {
   text-align: center !important;
   margin-bottom: 4rem;
   font-size: 1.9rem;
 }
-.projects .project-img {
+.project-img {
   transition: ease-out 0.3s;
   width: 50%;
   border-radius: 0.3rem;
+  margin-right: 3rem;
+
+  box-shadow: 11px 19px 50px 0px rgba(178, 188, 202, 0.897);
 }
-.projects .project-img:hover {
+.project-img:hover {
   transform: scale(1.01);
 }
 .project-img img {
@@ -526,12 +521,6 @@ h2:after {
 }
 .project-info {
   border-radius: 0.3rem;
-  background-image: linear-gradient(110deg, #00afb1 0%, #0e6882 100%);
-  background-image: linear-gradient(
-    110deg,
-    rgba(72, 163, 179, 0.745) 0%,
-    #0e6882 100%
-  );
 
   padding: 1rem;
   width: 50%;
@@ -540,26 +529,27 @@ h2:after {
 }
 
 .project-info h4 {
-  color: rgb(137, 247, 255);
+  color: var(--color-pro-head);
   margin-bottom: 1rem;
   padding: 0 3rem;
+  font-size: 1.8rem;
 }
 .project-info h4:after {
   content: " ";
   width: 60px;
-  height: 1.3px;
+  height: 2.3px;
   background-color: rgb(109, 216, 221);
   margin: 0 auto;
   display: block;
   margin-top: 9px;
 }
 .project-info p {
-  color: rgb(0, 0, 0);
-  color: rgb(255, 255, 255);
+  color: var(--color-pro-head);
   font-family: "lato";
   font-weight: lighter;
   font-size: 0.9rem;
   margin: 1.4rem;
+  line-height: 1.4rem;
 }
 .project-info h6 {
   display: flex;
@@ -571,18 +561,29 @@ h2:after {
   justify-content: center;
 }
 .project-info a {
-  color: white;
-  border: 1px solid rgb(255, 255, 255);
-  padding: 0.2rem 1rem;
+  color: rgb(255, 255, 255);
+  /* border: 1px solid rgb(167, 172, 184); */
+  background-color: #fff;
+  background-color: rgba(61, 160, 182, 0.871);
+  padding: 0.4rem 1rem;
   border-radius: 0.2rem;
   font-size: 0.8rem;
   text-decoration: none;
   width: 6rem;
-  margin: 0 0.5rem;
+  margin: 0 0.9rem;
+  box-shadow: 10px 10px 25px 0px rgba(178, 188, 202, 0.897);
+  transition: ease-in-out 0.3s;
+  font-weight: bold;
+}
+.project-info a:last-child {
+  background-color: #fff;
+  color: rgb(38, 136, 153);
 }
 .project-info a:hover {
   font-weight: bold;
-  border: 2px solid rgb(255, 255, 255);
+  /* border: 2px solid rgb(255, 255, 255); */
+  box-shadow: 0px 10px 12px 0px rgba(178, 188, 202, 0.897);
+  transform: scale(1.08);
 }
 .project-info a i {
   margin-right: 0.4rem;
@@ -1075,7 +1076,6 @@ h2:after {
     min-width: 58%;
   }
 
-  
   .project {
     display: block;
     height: 81vh;
