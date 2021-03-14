@@ -1,4 +1,4 @@
-import React, {useState} from 'react';
+import React, {useState ,useEffect} from 'react';
 import './App.css';
 import Nav from './components/Nav'
 import About from './components/About'
@@ -7,8 +7,13 @@ import Footer from './components/Footer'
 import Portfolio from './components/Portfolio'
 import Resume from './components/Resume'
 
+import AOS from 'aos';
+import 'aos/dist/aos.css';
+
 function App() {
-  
+  useEffect(()=>{
+    AOS.init({duration:1500})
+  },[])
   
   const [aboutSelected, setAboutSelected] = useState(true);
   const [portfolioSelected, setPortfolioSelected] = useState(false);

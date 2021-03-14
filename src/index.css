@@ -16,7 +16,7 @@
   --color-greenish: linear-gradient(180deg, #00afb1 0%, #0e6882 100%);
   --color-dark-blue: #0088a9;
   --color-light-blue: #0bbfec;
-  --color-button: linear-gradient(rgb(6, 174, 216), rgba(0, 136, 169, 1));
+  --color-button: rgba(61, 160, 182, 0.871);
 }
 * {
   margin: 0;
@@ -29,9 +29,6 @@ body {
   font-family: "lato", sans-serif;
   font-size: 16px;
 }
-/* section {
-  padding: 8rem 6rem;
-} */
 
 .heading-secondary {
   color: rgb(23, 170, 175);
@@ -57,16 +54,12 @@ h2,
 
 /*======  nav =================*/
 header {
-  background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)),
-    url("./assets/images/bg.jpg");
-
-  padding-top: 1.5rem;
+  /* background-color: var(--color-normal-bg); */
+  padding: 1rem;
   background-position: 100%;
   position: relative;
 }
 nav {
-  background-color: var(--primary-color);
-  padding: 0.5rem 1rem;
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
@@ -78,10 +71,7 @@ nav {
   background-attachment: fixed;
   background-position: 100%;
   z-index: 3;
-  color: white;
   align-items: center;
-  padding-right: 3rem;
-  box-shadow: 0px 1px 17px -2px rgba(109, 108, 129, 0.562);
 }
 
 nav h1 a {
@@ -89,16 +79,16 @@ nav h1 a {
   font-size: 1.2rem;
   margin: 0;
   color: rgb(130, 201, 219);
+  color: rgb(41, 48, 85);
 
   padding: 0rem 1rem;
 }
 nav h1 .logo {
   font-family: "Sirin Stencil", sanserif;
-
-  color: white;
+  color: rgb(41, 48, 85);
   border: 3px solid rgb(130, 201, 219);
   padding: 0.8rem 0.34rem;
-  font-size: 1.3rem;
+  font-size: 1.1rem;
   border-top-right-radius: 50%;
   border-bottom-right-radius: 45%;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
@@ -116,14 +106,16 @@ nav .navbar-items ul {
   list-style: none;
 }
 #resume {
-  border-radius: 1rem;
-  background-color: rgb(41, 48, 85);
-  padding: 0.4rem 1rem;
+  border-radius: 0.2rem;
+  background-color: var(--color-button);
+  padding: 0.6rem 1rem;
+  color: black;
 }
 #resume i {
   opacity: 0.4;
   margin-left: 0.4rem;
 }
+
 nav .navbar-items ul li a {
   color: rgb(58, 173, 191);
   margin-right: 2.5rem;
@@ -134,62 +126,103 @@ nav .navbar-items ul li a {
 }
 
 nav .navbar-items ul li a:hover {
-  color: rgb(220, 234, 240);
+  color: var(--secondary-color);
 }
 /* ======== hero-section   ============== */
 .about {
-  background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.596)),
-    url("./assets/images/bg.jpg");
-  background-size: cover;
-  background-position: center;
+  background-color: var(--color-normal-bg);
   display: flex;
   justify-content: space-around;
   flex-wrap: wrap;
   align-items: flex-start;
-  background-attachment: fixed;
-  background-position: 80%;
-  min-height: 100vh;
+  min-height: 140vh;
   position: relative;
-  /* background-color: var(--primary-color); */
+  clip-path: polygon(0 19%, 0 0, 100% 0, 100% 95%, 18% 100%, 0 93%);
 }
 .hero {
   height: 100%;
   width: 35%;
 }
+
+.card {
+  height: 13rem;
+  width: 11rem;
+  border-radius: 0.1rem;
+  padding: 2rem 1rem;
+  background-color: #fff;
+  position: absolute;
+  transition: all 0.3s;
+
+  box-shadow: 11px 19px 29px 0px rgba(151, 162, 177, 0.897);
+}
+.card-1 {
+  border-top: 5px solid rgb(31, 145, 197);
+  transform: rotate(-40deg);
+  left: 15%;
+  top: 37%;
+}
+.card-2 {
+  border-top: 5px solid rgb(31, 178, 197);
+  transform: rotate(-25deg);
+
+  left: 20%;
+  top: 38%;
+}
+.card-3 {
+  border-top: 5px solid rgb(31, 197, 133);
+  transform: rotate(-10deg);
+  /* color:rgb(31, 197, 133); */
+  left: 25%;
+  top: 39%;
+}
+.card-4 {
+  border-top: 5px solid rgb(103, 31, 197);
+  transform: rotate(5deg);
+  left: 30%;
+  top: 40%;
+  /* color:rgb(103, 31, 197); */
+}
+.cards:hover .card {
+  transform: rotate3d(0, 0, 0, 45deg);
+}
+
+
+.card h4 {
+  padding-bottom: 1rem;
+  font-size: 0.8rem;
+  color: black;
+}
+.card li {
+  font-size: 0.8rem;
+  opacity: 0.8;
+  padding-bottom: 0.2rem;
+}
+
 .about-bio {
-  width: 30%;
-  text-align: center;
-  margin: auto;
-  margin-top: -5rem;
+  width: 20%;
+  /* text-align: center; */
+  margin: 5rem auto;
   margin-right: 5rem;
   padding: 2rem 3rem;
   background-color: #fff;
-  height: 110vh;
-  background-color: #040e2e;
-  /* border: 2px solid rgb(48, 124, 143); */
-  /* transform: skewX(-3deg); */
+  background-color: var(--color-button);
+  height: 80vh;
+  box-shadow: 11px 19px 29px 0px rgba(151, 162, 177, 0.897);
 }
 .about-bio h2 {
-  color: rgb(240, 240, 240);
-  margin-top: 5rem;
   font-size: 1.9rem;
+  padding-bottom: 1rem;
+  color: var(--color-button);
+  color: white;
 }
 .about-bio p {
-  color: rgb(214, 220, 221);
-  line-height: 2;
-  padding: 2rem 1rem;
+  line-height: 1.7;
+  padding: 0.3rem 1rem;
+  opacity: 0.7;
+  color: white;
 }
 
 .hero-body {
-  width: 12rem;
-  height: 12rem;
-  position: absolute;
-  top: 30%;
-  left: 20%;
-  border-radius: 50%;
-  border: 2px solid var(--tertiary-color);
-  padding: 0.85rem;
-  animation: movedown 2s;
 }
 .hero-img {
   width: 10rem;
@@ -203,31 +236,16 @@ nav .navbar-items ul li a:hover {
 }
 .hero-subtitle {
   position: absolute;
-  top: 66%;
-  left: 23%;
-  color: var(--primary-color);
-}
-.hero-subtitle p {
-  color: #f1f1f1;
+  top: 16%;
+  left: 15%;
 }
 .hero-subtitle h3 {
-  color: var(--text-color);
-  padding: 0.4rem 0;
-  font-family: "Sirin Stencil", sanserif;
+  color: var(--color-button);
 }
-
-@keyframes movedown {
-  0% {
-    top: 0%;
-    opacity: 0;
-  }
-  90% {
-    top: 32%;
-    opacity: 1;
-  }
-  100% {
-    top: 30%;
-  }
+.hero-subtitle h1 {
+  color: var(--color-pro-head);
+  padding: 0.4rem 0;
+  font-size: 2.5rem;
 }
 
 /*======================================== CONTACT  ==================-=-====*/
@@ -382,12 +400,12 @@ nav .navbar-items ul li a:hover {
 /*=================   SKILLS  =================================*/
 
 .skills {
-  height: 100vh;
+  height: 120vh;
   background-color: var(--color-normal-bg);
-  padding: 1rem 8rem;
+  padding: 7rem 8rem;
   transition: all 0.3s;
   position: relative;
-  z-index: 1;
+  clip-path: polygon(0 19%, 75% 0%, 100% 10%, 100% 82%, 26% 96%, 0 76%);
 }
 .tech {
   width: 100%;
@@ -399,13 +417,18 @@ nav .navbar-items ul li a:hover {
 }
 .tech-item {
   min-width: 20%;
-  height: 10rem;
+  height: 14rem;
   padding: 20px;
   color: var(--color-pro-head);
   border-radius: 0.2rem;
-  /* border: 2px solid black; */
   box-shadow: 10px 9px 24px 0px rgba(178, 188, 202, 0.897);
   background-color: #fff;
+}
+.skill-clip {
+  width: 100%;
+  height: 3rem;
+  background-color: var(--color-normal-bg);
+  clip-path: polygon(0 29%, 75% 0%, 100% 10%, 100% 82%, 26% 96%, 0 76%);
 }
 
 .skills h2 {
@@ -443,15 +466,13 @@ h2:after {
   font-size: 0.8rem;
   font-family: "lato", sans-serif;
   border-radius: 1rem;
-  background-color: rgb(57, 151, 158);
-
+  background-color: var(--color-button);
   margin-bottom: 0.9rem;
   letter-spacing: 0.03rem;
 }
 .skills li {
   font-size: 0.8rem;
   text-align: left;
-
   font-family: "lato", sans-serif;
   padding-top: 0.3rem;
 }
@@ -464,9 +485,8 @@ h2:after {
 /* =============================== PROJECTS =============== */
 
 .projects {
-  width: 100vw;
+  width: 100%;
   padding: 3rem 3rem;
-
   background-color: var(--color-normal-bg);
 }
 
@@ -562,9 +582,7 @@ h2:after {
 }
 .project-info a {
   color: rgb(255, 255, 255);
-  /* border: 1px solid rgb(167, 172, 184); */
-  background-color: #fff;
-  background-color: rgba(61, 160, 182, 0.871);
+  background-color: var(--color-button);
   padding: 0.4rem 1rem;
   border-radius: 0.2rem;
   font-size: 0.8rem;
@@ -577,7 +595,8 @@ h2:after {
 }
 .project-info a:last-child {
   background-color: #fff;
-  color: rgb(38, 136, 153);
+
+  color: var(--color-button);
 }
 .project-info a:hover {
   font-weight: bold;
@@ -704,7 +723,7 @@ h2:after {
   }
   .tech-item {
     min-width: 22%;
-    height: 10rem;
+    height: 14rem;
   }
 
   .projects {
@@ -771,7 +790,7 @@ h2:after {
   }
   .tech-item {
     min-width: 34%;
-    height: 10rem;
+    height: 14rem;
     margin: 2rem 1rem;
   }
 
@@ -836,7 +855,7 @@ h2:after {
   }
   .tech-item {
     min-width: 34%;
-    height: 10rem;
+    height: 14rem;
     margin: 2rem 1rem;
   }
   .project {
@@ -1223,5 +1242,5 @@ h2:after {
 }
 
 .navActive {
-  color: rgb(201, 216, 228) !important;
+  border-bottom: 2px solid var(--color-button);
 }
