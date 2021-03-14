@@ -186,7 +186,6 @@ nav .navbar-items ul li a:hover {
   transform: rotate3d(0, 0, 0, 45deg);
 }
 
-
 .card h4 {
   padding-bottom: 1rem;
   font-size: 0.8rem;
@@ -218,7 +217,7 @@ nav .navbar-items ul li a:hover {
 .about-bio p {
   line-height: 1.7;
   padding: 0.3rem 1rem;
-  opacity: 0.7;
+  opacity: 0.9;
   color: white;
 }
 
@@ -688,6 +687,23 @@ h2:after {
 }
 
 /* ============================  MEDIA QUERY ============================================================= */
+@media screen and (min-width: 1400px) {
+  body {
+    font-size: 19px;
+  }
+  .about-bio {
+    width: 30%;
+  }
+  .skills {
+    padding-top: 14rem;
+  }
+}
+@media screen and (min-width: 1700px) {
+  body {
+    font-size: 22px;
+  }
+}
+
 @media screen and (max-width: 1280px) {
   .about-bio {
     width: 36%;
@@ -716,7 +732,6 @@ h2:after {
   }
   .skills {
     height: 100vh;
-    padding: 1rem 8rem;
   }
   .tech {
     width: 100%;
@@ -746,7 +761,7 @@ h2:after {
   }
   .project-info {
     height: 30%;
-
+    padding-top: 3rem;
     width: 100%;
   }
   .project-info span {
@@ -758,7 +773,7 @@ h2:after {
 @media screen and (max-width: 970px) {
   .about-bio {
     width: 46%;
-    margin-top: -13rem;
+    margin-top: -2rem;
     margin-right: 0rem;
     padding: 2rem 1rem;
   }
@@ -782,8 +797,7 @@ h2:after {
   }
 
   .skills {
-    height: 100vh;
-    padding: 1rem 10rem;
+    height: 160vh;
   }
   .tech {
     width: 100%;
@@ -828,26 +842,36 @@ h2:after {
   nav .navbar-items ul li a {
     margin-right: 0.9rem;
   }
-  .about-bio {
-    text-align: center;
-    margin-top: -7.5rem;
-  }
+
   .contact {
     text-align: center;
     margin-top: -7.5rem;
   }
   .about {
-    padding: 2rem 3rem;
+    display: block;
+    align-items: center;
+    height: 160vh;
+    padding: 0rem;
   }
-  .hero-body {
+  .hero {
+    height: 50%;
+  }
+  .about-bio {
+    text-align: center;
+    /* margin-top: -12rem; */
+    margin: auto;
+    width: 44%;
+  }
+  .cards {
+    position: absolute;
     width: 12rem;
     height: 12rem;
-    top: 20%;
-    left: 19%;
+    top: 10%;
+    left: 15%;
   }
   .hero-subtitle {
-    top: 59%;
-    left: 20%;
+    top: 19%;
+    left: 56%;
   }
   .skills {
     min-height: 150vh;
@@ -882,16 +906,7 @@ h2:after {
     height: 100vh;
     padding: 2rem;
   }
-  .hero-body {
-    width: 12rem;
-    height: 12rem;
-    top: 20%;
-    left: 11%;
-  }
-  .hero-subtitle {
-    top: 59%;
-    left: 13%;
-  }
+
   section {
     padding: 8rem 3rem;
   }
@@ -917,15 +932,11 @@ h2:after {
     padding: 0.3rem;
   }
   .about {
-    display: block;
-    align-items: center;
-    height: 160vh;
-
-    padding: 0rem;
+    height: 200vh;
   }
+
   .about-bio {
-    width: 100vw;
-    height: 90vh;
+    width: 65%;
     bottom: 0 !important;
     padding: 2rem;
   }
@@ -942,20 +953,20 @@ h2:after {
   }
 
   .hero {
-    height: 90vh;
     width: 35%;
   }
-  .hero-body {
-    width: 12rem;
-    height: 12rem;
-    top: 15%;
-    left: 19%;
+  .cards {
+    position: absolute;
+    top: 19%;
+    left: 29%;
   }
   .hero-subtitle {
-    top: 21%;
-    left: 60%;
+    top: 11%;
+    left: 20%;
   }
-
+  .skills {
+    padding-top: 6rem;
+  }
   section {
     padding: 8rem 3rem;
   }
@@ -1030,8 +1041,8 @@ h2:after {
   }
 
   .skills {
-    height: 200vh;
-    padding: 1rem 5rem;
+    height: 250vh;
+    padding: 8rem 5rem;
   }
 
   .tech-item {
@@ -1061,11 +1072,9 @@ h2:after {
   }
 }
 @media screen and (max-width: 495px) {
-  .about {
-    height: 160vh;
-  }
   .about-bio {
     padding: 2rem;
+    width: 80%;
   }
   .contact {
     padding: 2rem;
@@ -1074,25 +1083,13 @@ h2:after {
     margin: 1rem 1rem;
   }
 
-  .hero-body {
-    width: 12rem;
-    height: 12rem;
-    top: 13%;
-    left: 26%;
-  }
-  .hero-subtitle {
-    top: 34%;
-    left: 30%;
-  }
   .skills {
-    height: 200vh;
-    padding: 1rem 3rem;
   }
   .tech {
     width: 100%;
   }
   .tech-item {
-    min-width: 58%;
+    min-width: 68%;
   }
 
   .project {
@@ -1115,10 +1112,11 @@ h2:after {
 }
 @media screen and (max-width: 400px) {
   .about {
-    height: 170vh;
+    height: 200vh;
   }
-  .hero {
-    /* height:90vh; */
+  .cards {
+    top: 22%;
+    left: 10%;
   }
   .about-bio {
     height: 110vh;
@@ -1126,7 +1124,9 @@ h2:after {
   .contact {
     height: 100vh;
   }
-
+  .skills {
+    padding: 8rem 2rem;
+  }
   .contact-form {
     margin: 1rem 0rem;
   }
@@ -1143,10 +1143,6 @@ h2:after {
     border-radius: 1rem;
     background-color: rgb(41, 48, 85);
     padding: 0.3rem 0.6rem;
-  }
-  .skills {
-    height: 200vh;
-    padding: 1rem 3rem;
   }
   .tech {
     width: 100%;
@@ -1169,6 +1165,7 @@ h2:after {
   .project-info {
     height: 30%;
     /* padding: 1rem .8rem; */
+    padding-bottom: 1rem;
   }
   .project-info span {
     padding: 0.3rem;
@@ -1185,16 +1182,7 @@ h2:after {
   .about {
     height: 185vh;
   }
-  .hero-body {
-    width: 12rem;
-    height: 12rem;
-    top: 13%;
-    left: 16%;
-  }
-  .hero-subtitle {
-    top: 34%;
-    left: 20%;
-  }
+
   .contact {
     height: 110vh;
     padding: 0.9rem;
@@ -1204,14 +1192,14 @@ h2:after {
     padding-top: 2rem;
   }
   .skills {
-    height: 200vh;
-    padding: 1rem 1rem;
+    height: 240vh;
+    padding: 8rem 1rem;
   }
   .tech {
     width: 100%;
   }
   .tech-item {
-    min-width: 88%;
+    width: 88%;
     margin: 1rem;
   }
   .projects {

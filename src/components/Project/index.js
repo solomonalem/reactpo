@@ -42,7 +42,7 @@ function Project(){
             {projects.map((project) => (
                 <>
                 <div className={`project project-${project.name}`} key={project.name}>
-                    <a href={`${project.liveLink}`} target="_blank" className="project-img" data-aos="fade-right"   data-aos-once="true"  > </a>
+                    <div  className="project-img" data-aos="fade-right"   data-aos-once="true"  > </div>
                     <div className="project-info" data-aos-once="true" data-aos="fade-left">
                         <h4 data-aos-once="true" data-aos="slide-up">{project.name}</h4>
                         <p>{project.description}</p>
