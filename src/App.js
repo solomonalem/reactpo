@@ -1,4 +1,6 @@
 import React, {useState ,useEffect} from 'react';
+import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
+
 import './App.css';
 import Nav from './components/Nav'
 import About from './components/About'
@@ -6,6 +8,7 @@ import Contact from './components/Contact'
 import Footer from './components/Footer'
 import Portfolio from './components/Portfolio'
 import Resume from './components/Resume'
+import NoMatch from './components/NoMatch'
 
 import AOS from 'aos';
 import 'aos/dist/aos.css';
@@ -15,38 +18,26 @@ function App() {
     AOS.init({duration:1500})
   },[])
   
-  const [aboutSelected, setAboutSelected] = useState(true);
-  const [portfolioSelected, setPortfolioSelected] = useState(false);
-  const [contactSelected, setContactSelected] = useState(false);
-  const [skillSelected, setSkillSelected] = useState(false);
-  const [resumeSelected, setResumeSelected] = useState(false);
   return (
+    <Router>
     <div>
-      <Nav
-      resumeSelected={resumeSelected}
-      setResumeSelected={setResumeSelected}
-      contactSelected={contactSelected}
-      portfolioSelected={portfolioSelected}
-      aboutSelected={aboutSelected}
-        setAboutSelected={setAboutSelected}
-        setContactSelected={setContactSelected}
-        setPortfolioSelected={setPortfolioSelected}
-        setSkillSelected={setSkillSelected}
-
-      />
+      <Nav/>
       <main>
         <div>
-            {contactSelected && (<Contact />) } 
-            {aboutSelected && (<About />)}
-            {portfolioSelected && (<Portfolio />)}
-            {resumeSelected && (<Resume />)}
-
+        <Switch>
+              <Route exact path="/work" component={Portfolio} />
+              <Route exact path="/about" component={About} />
+              <Route exact path="/contact" component={Contact} />
+              <Route exact path="/resume" component={Resume} />
+              <Route component={NoMatch} />
+            </Switch>
         </div>
      
       </main>
       <Footer/>
       
     </div>
+    </Router>
   );
 }
 
