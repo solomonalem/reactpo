@@ -9,7 +9,7 @@ function Nav(){
         <header>
         <nav>
           <h1>
-            <a href="/"> <span className="logo">Web</span> evelopment</a>
+            <a href="/`"> <span className="logo">Web</span> evelopment</a>
           </h1>
           <div className="navbar-items">
           <BurgerMenu />
