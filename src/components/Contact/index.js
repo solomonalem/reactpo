@@ -58,14 +58,14 @@ function Contact(){
                      <ul>
                     <li>
                     <a href="https://github.com/solomonmeresa" target="_blank" rel="noreferrer">
-                        <i class="fab fa-github"></i></a
+                        <i className="fab fa-github"></i></a
                     >
                     </li>
                     <li>
                     <a
                         href="https://www.linkedin.com/in/solomom-meresa-4b83251a3/"
                         target="_blank" rel="noreferrer"
-                        ><i class="fab fa-linkedin-in"></i></a
+                        ><i className="fab fa-linkedin-in"></i></a
                     >
                     </li>
                     

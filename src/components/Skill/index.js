@@ -35,12 +35,12 @@ function Skill(){
 
             {skills.map( (skill)=>(
                 <div className="tech-item" key={skill.name} data-aos="fade-up"  data-aos-once="true">
-                <h4>{skill.name}</h4>
-                {skill.skillSet.map(set=>(
-                    <li key={set}>{set}</li>
+                    <h4>{skill.name}</h4>
+                    {skill.skillSet.map(set=>(
+                        <li key={set}>{set}</li>
 
-                ))}
-                <div className="skill-clip"></div>
+                    ))}
+                    <div className="skill-clip"></div>
                 </div>
 
             ))}

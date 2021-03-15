@@ -40,7 +40,7 @@ function Project(){
     return(
         <div className="projects-container">
             {projects.map((project) => (
-                <>
+                
                 <div className={`project project-${project.name}`} key={project.name}>
                     <div  className="project-img" data-aos="fade-right"   data-aos-once="true"  > </div>
                     <div className="project-info" data-aos-once="true" data-aos="fade-left">
@@ -55,7 +55,7 @@ function Project(){
                     </div>
                     
                 </div>
-                </>
+                
             
                 
             ))}

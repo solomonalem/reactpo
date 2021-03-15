@@ -1,6 +1,6 @@
 {
   "name": "solo-portfolio",
-  "homepage": "http://solomonmeresa.github.io/solo-portfolio",
+  "homepage": "/",
   "version": "0.1.0",
   "private": true,
   "dependencies": {

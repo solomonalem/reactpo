@@ -3,7 +3,7 @@ import Project from '../Project';
 
 function Portfolio(){
     return(
-        <section class="projects" id="work">
+        <section className="projects" id="work">
      
           <Project/>
        

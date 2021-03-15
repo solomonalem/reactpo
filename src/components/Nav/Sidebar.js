@@ -29,7 +29,7 @@ const Sidebar = ({ open, onClick }) => {
 
               <li>
               <Link to="/resume" id="resume"
-            download>Resume <i class="fas fa-download"></i></Link>
+            download>Resume <i className="fas fa-download"></i></Link>
               </li>
        
 
