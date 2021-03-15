@@ -114,10 +114,9 @@ nav .navbar-items ul {
 }
 
 nav .navbar-items ul li a {
-  color: rgb(58, 173, 191);
   margin-right: 2.5rem;
   padding: 0.3rem;
-  font-size: 0.9rem;
+  font-size: 0.8rem;
 }
 
 nav .navbar-items ul li a:hover {
@@ -483,10 +482,15 @@ h2:after {
 .project {
   display: flex;
   justify-content: space-between;
-  height: 49vh;
+  height: 69vh;
   width: 100%;
   border-radius: 0.3rem;
-  margin: 10.4rem 0;
+  margin: 7.4rem 0;
+  border-bottom: 1px solid rgba(181, 186, 209, 0.5);
+  padding-bottom: 8rem;
+}
+.project:last-child {
+  border-bottom: none;
 }
 .projects h2 {
   text-align: center !important;
@@ -871,8 +875,10 @@ h2:after {
     left: 56%;
   }
   .skills {
-    min-height: 150vh;
-    padding: 1rem 5rem;
+    vertical-align: middle;
+  }
+  .skills h2 {
+    padding-top: 15rem;
   }
   .tech-item {
     min-width: 34%;
@@ -1055,7 +1061,7 @@ h2:after {
     width: 100%;
   }
   .tech-item {
-    min-width: 68%;
+    min-width: 78%;
   }
 
   .project {

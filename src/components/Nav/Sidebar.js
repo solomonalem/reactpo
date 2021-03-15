@@ -46,6 +46,10 @@ const UlContainer = styled.ul`
 
     display:flex;
     flex-flow:row nowrap;
+    li{
+        text-transform:uppercase;
+    font-weight:bold;
+    }
  
 
   @media only screen and (max-width: 768px) {
@@ -65,8 +69,10 @@ const UlContainer = styled.ul`
     
 
     li {
-      padding:1rem;
+      padding:2rem 1rem;
       margin:.2rem;
+      border-top: 1px solid rgba(181, 186, 209, 0.5);
+   
     }
   
   }

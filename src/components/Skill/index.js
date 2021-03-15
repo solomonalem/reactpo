@@ -30,7 +30,7 @@ function Skill(){
 
     return(
         <section className="skills"id="skills">
-          <h2 >Skills</h2>
+          <h2 >TECHNICAL - SKILLS</h2>
             <div className="tech">
 
             {skills.map( (skill)=>(
