@@ -1,6 +1,6 @@
 {
   "short_name": "SORTFOLO",
-  "name": "Personal website",
+  "name": "solo-portfolio",
   "icons": [
     {
       "src": "favicon.ico",
@@ -16,6 +16,12 @@
       "src": "logo512.png",
       "type": "image/png",
       "sizes": "512x512"
+    },
+     {
+      "src": "maskable_icon.png",
+      "type": "image/png",
+      "sizes": "234x234",
+      "purpose": "any maskable"
     }
   ],
   "start_url": ".",

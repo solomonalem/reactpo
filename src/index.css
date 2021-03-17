@@ -213,7 +213,6 @@ nav .navbar-items ul li a:hover {
   color: white;
 }
 
-
 .hero-subtitle {
   position: absolute;
   top: 16%;
@@ -1088,6 +1087,7 @@ h2:after {
     height: 100vh;
   }
   .skills {
+    height: 320vh;
     padding: 8rem 2rem;
   }
   .contact-form {

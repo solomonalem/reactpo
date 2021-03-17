@@ -5,19 +5,19 @@ function Project(){
     const [projects] = useState([
       {
         name: 'AdoptMe',
-        description: 'AdoptMe  is a website for an dog shelter where user can  adopt  dogs. AdoptMe has to portals the admin and user portals .In the admin portal you have the abiliity to add adog element with its all properties ,check the adoption requests from user and approve it, admin can also see the list of all users or applicants from the portal, user have also the ability to donate were payment is proccessed by Stripe',
+        description: 'AdoptMe  is a website for a dog shelter where user can  adopt  dog. AdoptMe has two portals the admin and user portals .With the admin portal you have the abiliity to add a new dog  with its all description ,check the adoption requests from user and approve it, admin can also see the list of all users or applicants from the portal, user have also the ability to donate were it is proccessed by Stripe',
          githubLink:'https://github.com/hameed1239/adopt-me',
         liveLink:'https://adopt-me-hameed1239.herokuapp.com/'
       },
         {
           name: 'ConnectIn',
-          description: 'ConnectIn is a network, designed to connect your professional identity with opportunities. Users can sign up safely to create a profile.User can search for a job using location and technologies or description, where by default it will render any already searched jobs . Users can login to profile, and demonstrate their information, skills ,exprience,interests and background. Users can post any post, and leave comments',
+          description: 'ConnectIn is designed to connect your professional identity with opportunities. Users can sign up safely and create a profile.User can search for a job using location and technologies or description, where by default it will render any already searched jobs . Users can login to profile, and demonstrate their information, skills ,exprience,interests and background. Users can post any post, and leave comments',
           githubLink:'https://github.com/rongbangye/JobedIn',
           liveLink:'https://fathomless-stream-49781.herokuapp.com/'
         },
         {
           name: 'Covid-Tracker',
-          description: 'Is web-app built to help tracking covid-19 datas for every single nation.This application will give you a clear understanding of a countrys current state regarding new cases, recovered, death and total tests made so far.In addition to this it will present you covid related news from all media sources. User live -report section sorted from most to the least affected countries.',
+          description: 'Is web-app built to help tracking covid-19 datas for every single nation.This application will give you a clear understanding of a countrys current state regarding new cases, recovered, death and total tests made so far.In addition to this it will present you covid related news from all media sources. User live-report section sorted and listed from most to the least affected countries.',
           githubLink:'https://github.com/solomonmeresa/Corona-Tracker',
           liveLink:'https://solomonmeresa.github.io/Corona-Tracker/'
         },
